@@ -1,12 +1,8 @@
 package lab8.no_2;
 
-import classexercise.functional.EmployeeInfoLambda;
-
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-import java.util.function.Function;
 
 public class EmployeeInfo {
     static enum SortMethod {BYNAME, BYSALARY}
