@@ -8,7 +8,7 @@ public class EquiliteralTrangle implements Polygon {
     }
 
     @Override
-    public double[] getLength() {
+    public double[] getSides() {
         return new double[]{side, side, side};
     }
 }

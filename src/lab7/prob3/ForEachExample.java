@@ -21,13 +21,20 @@ public class ForEachExample {
 
 
         //print each element of the list in upper case format
-		MyConsumer c = new MyConsumer();
-		list.forEach(c);
+		/*MyConsumer c = new MyConsumer();
+		list.forEach(c);*/
 
+        //Anonymous
+        list.forEach(new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                upperCaseList.add(s.toUpperCase());
+            }
+        });
 		System.out.println(upperCaseList);
     }
 
-    //implement a Consumer
+    //implement a Consumer inner class
     static class MyConsumer implements Consumer<String> {
 
         @Override

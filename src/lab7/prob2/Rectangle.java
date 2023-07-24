@@ -10,7 +10,7 @@ public final class Rectangle implements Polygon {
 	}
 
 	@Override
-	public double[] getLength() {
+	public double[] getSides() {
 		return new double[]{width, length};
 	}
 }
